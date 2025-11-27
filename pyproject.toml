@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "mnist-gan-app"
+version = "0.1.0"
+description = "Aplicación de ejemplo: generación de dígitos manuscritos con DCGAN y Streamlit."
+authors = ["Laura Sanchez Giraldo <laurasanchezgiraldo@outlook.es>"]
+readme = "README.md"
+packages = [{ include = "mnist_gan_app", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^2.2.0"
+torchvision = "^0.17.0"
+streamlit = "^1.38.0"
+numpy = "^1.26.0"
+pillow = "^10.0.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.0.0"
+isort = "^5.13.0"
+mypy = "^1.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
